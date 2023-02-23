@@ -1,6 +1,6 @@
 name: zebra_rfid_sdk_plugin
 description: Zebra Rfid Sdk Plugin.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin.git
 
 environment:
