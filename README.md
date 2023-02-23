@@ -149,6 +149,9 @@ class _MyAppState extends State<MyApp> {
 
 ## Tested on Zebra MC33 Device
 
+<img width="300" src="https://firebasestorage.googleapis.com/v0/b/instagram-clone-cf306.appspot.com/o/post%2FpQOrbpA3fUWWHz7dcBOwxaXn27N2%2FMC33_device.jpeg?alt=media&token=8868364e-a758-4c7d-9265-e50003bbfd72"> 
+
+
 ## Authors
 
 - [@Justin Roy](https://www.linkedin.com/in/justin-roy-4817551ba/)
