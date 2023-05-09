@@ -1,26 +1,27 @@
 # Zebra Rfid SDK Plugin
 
-## Steps to follow
 
-```javascript
+## Steps to follow
 1. flutter pub add zebra_rfid_sdk_plugin
 2. add folder to android
-   -  android/RFIDAPI3Library
-   -  copy content from here below link
-Note:- (build.gradle and RFIDAPI3Library.arr and add this files to android/RFIDAPI3Library)
-Like:- https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/tree/main/android/RFIDAPI3Library
-3. In Setting.gradle add below lines.
-   - include ':app',':RFIDAPI3Library'
-   - project(":RFIDAPI3Library").projectDir = file("./RFIDAPI3Library")
-4. Add below line to Android.xml
-   - xmlns:tools="http://schemas.android.com/tools" (this will add under manifest tag)
-   - tools:replace="android:label" (this will add under application tag)
-Note:- (still confuse refer this link -> https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/example/android/app/src/main/AndroidManifest.xml#:~:text=%3Cmanifest%20xmlns,ic_launcher%22%3E)
-4. minSdkVersion 19 or higher
-Ready to use :D
-```
+ -  android/RFIDAPI3Library
+ -  copy content from here below link
+    
+    Note:- (build.gradle and RFIDAPI3Library.arr and add this files to android/RFIDAPI3Library) [Link](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/tree/main/android/RFIDAPI3Library)
 
-## Usage/Examples
+3. In Setting.gradle add below lines.
+ - include ':app',':RFIDAPI3Library'
+ - project(":RFIDAPI3Library").projectDir = file("./RFIDAPI3Library")
+4. Add below line to Android.xml
+ - xmlns:tools="http://schemas.android.com/tools" (this will under manifest tag)
+ - tools:replace="android:label" (this will add under application tag)
+4. minSdkVersion 19 or higher
+ - Ready to use :D 
+    
+- [still confuse refer this link example app](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/example/android/app/src/main/AndroidManifest.xml#:~:text=%3Cmanifest%20xmlns,ic_launcher%22%3E)
+    
+
+## Examples
 
 ```javascript
 import 'dart:async';
