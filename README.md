@@ -3,13 +3,13 @@
 
 ## Steps to follow
 1. flutter pub add zebra_rfid_sdk_plugin
-2. add folder to android
- -  android/RFIDAPI3Library
- -  copy content from here below link
+2. create/add folder to android
+ -  create android/RFIDAPI3Library folder
+ -  download content from below link and copy in android/RFIDAPI3Library
     
-    Note:- (build.gradle and RFIDAPI3Library.arr and add this files to android/RFIDAPI3Library) [Link](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/tree/main/android/RFIDAPI3Library)
+    Note:- (build.gradle and RFIDAPI3Library.arr add this files to android/RFIDAPI3Library) [Link](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/tree/main/android/RFIDAPI3Library)
 
-3. In Setting.gradle add below lines.
+3. In setting.gradle add below lines.
  - include ':app',':RFIDAPI3Library'
  - project(":RFIDAPI3Library").projectDir = file("./RFIDAPI3Library")
 4. Add below line to Android.xml
