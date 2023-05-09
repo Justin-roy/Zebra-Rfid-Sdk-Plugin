@@ -165,4 +165,4 @@ class _MyAppState extends State<MyApp> {
 
 ## Support
 
-For support, Give a star ⭐ to repo.
+For support, give a star ⭐ to repo.
