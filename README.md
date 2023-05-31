@@ -11,10 +11,17 @@
 
 3. In setting.gradle add below lines.
  - include ':app',':RFIDAPI3Library' //RFIDAPI3Library is folder name
-4. Add below line to Android.xml
+4. In build.gradle add below lines. // app level (android/app/build.gradle)
+ - dependencies {
+   implementation project(":libs",)
+   }
+   
+   see here -> [link]()
+   
+5. Add below line to Android.xml
  - xmlns:tools="http://schemas.android.com/tools" (this will under manifest tag)
  - tools:replace="android:label" (this will add under application tag)
-4. minSdkVersion 19 or higher
+6. minSdkVersion 19 or higher
  - Ready to use :D 
     
 - [still confuse refer this link example app](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/example/android/app/src/main/AndroidManifest.xml#:~:text=%3Cmanifest%20xmlns,ic_launcher%22%3E)
