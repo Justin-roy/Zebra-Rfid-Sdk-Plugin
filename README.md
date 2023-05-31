@@ -10,8 +10,7 @@
     Note:- (build.gradle and RFIDAPI3Library.arr add this files to android/RFIDAPI3Library) [Link](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/tree/main/android/RFIDAPI3Library)
 
 3. In setting.gradle add below lines.
- - include ':app',':RFIDAPI3Library'
- - project(":RFIDAPI3Library").projectDir = file("./RFIDAPI3Library")
+ - include ':app',':RFIDAPI3Library' //RFIDAPI3Library is folder name
 4. Add below line to Android.xml
  - xmlns:tools="http://schemas.android.com/tools" (this will under manifest tag)
  - tools:replace="android:label" (this will add under application tag)
