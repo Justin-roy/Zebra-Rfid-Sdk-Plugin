@@ -16,7 +16,7 @@
    implementation project(":libs",)
    }
    
-   see here -> [link]()
+   see here -> [link](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/example/android/app/build.gradle)
    
 5. Add below line to Android.xml
  - xmlns:tools="http://schemas.android.com/tools" (this will under manifest tag)
