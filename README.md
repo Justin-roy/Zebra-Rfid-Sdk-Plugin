@@ -13,8 +13,9 @@
  - include ':app',':RFIDAPI3Library' //RFIDAPI3Library is folder name
 4. In build.gradle add below lines. // app level (android/app/build.gradle)
  - dependencies {
-   implementation project(":libs",)
+   implementation project(":RFIDAPI3Library",)
    }
+   //RFIDAPI3Library is folder name
    
    see here -> [link](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/example/android/app/build.gradle)
    
