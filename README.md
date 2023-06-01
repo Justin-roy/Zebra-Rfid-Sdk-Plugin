@@ -1,26 +1,34 @@
 # Zebra Rfid SDK Plugin
 
+
 ## Steps to follow
-
-```javascript
 1. flutter pub add zebra_rfid_sdk_plugin
-2. add folder to android
-   -  android/RFIDAPI3Library
-   -  copy content from here below link
-Note:- (build.gradle and RFIDAPI3Library.arr and add this files to android/RFIDAPI3Library)
-Like:- https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/tree/main/android/RFIDAPI3Library
-3. In Setting.gradle add below lines.
-   - include ':app',':RFIDAPI3Library'
-   - project(":RFIDAPI3Library").projectDir = file("./RFIDAPI3Library")
-4. Add below line to Android.xml
-   - xmlns:tools="http://schemas.android.com/tools" (this will add under manifest tag)
-   - tools:replace="android:label" (this will add under application tag)
-Note:- (still confuse refer this link -> https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/example/android/app/src/main/AndroidManifest.xml#:~:text=%3Cmanifest%20xmlns,ic_launcher%22%3E)
-4. minSdkVersion 19 or higher
-Ready to use :D
-```
+2. create/add folder to android
+ -  create android/RFIDAPI3Library folder
+ -  download content from below link and copy in android/RFIDAPI3Library
+    
+    Note:- (build.gradle and RFIDAPI3Library.arr add this files to android/RFIDAPI3Library) [Link](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/tree/main/android/RFIDAPI3Library)
 
-## Usage/Examples
+3. In setting.gradle add below lines.
+ - include ':app',':RFIDAPI3Library' //RFIDAPI3Library is folder name
+4. In build.gradle add below lines. // app level (android/app/build.gradle)
+ - dependencies {
+   implementation project(":RFIDAPI3Library",)
+   }
+   //RFIDAPI3Library is folder name
+   
+   see here -> [link](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/example/android/app/build.gradle)
+   
+5. Add below line to Android.xml
+ - xmlns:tools="http://schemas.android.com/tools" (this will under manifest tag)
+ - tools:replace="android:label" (this will add under application tag)
+6. minSdkVersion 19 or higher
+ - Ready to use :D 
+    
+- [still confuse refer this link example app](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/example/android/app/src/main/AndroidManifest.xml#:~:text=%3Cmanifest%20xmlns,ic_launcher%22%3E)
+    
+
+## Examples
 
 ```javascript
 import 'dart:async';
@@ -158,12 +166,10 @@ class _MyAppState extends State<MyApp> {
 
 ## Badges
 
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
 ## Support
 
-For support, Give a star ⭐ to repo.
+For support, give a star ⭐ to repo.
