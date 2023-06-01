@@ -1,3 +1,3 @@
-## 0.0.2
+## 0.0.3
 
 - Zebra Sdk Plugin For Android 11
