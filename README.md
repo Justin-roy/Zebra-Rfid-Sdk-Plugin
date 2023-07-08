@@ -1,5 +1,6 @@
 # Zebra Rfid SDK Plugin
 
+Zebra RFID is a technology provided by Zebra Technologies that uses radio waves to automatically identify and track objects. It consists of RFID tags attached to objects, RFID readers that capture tag information, and software that processes and utilizes the data. Zebra's RFID solutions help businesses improve efficiency, accuracy, and visibility in areas such as inventory management, asset tracking, and supply chain operations. They enable organizations to automate data capture, reduce manual efforts, and gain real-time insights into their operations, leading to enhanced productivity and better customer experiences.
 
 ## Steps to follow
 1. Run command to add package:
