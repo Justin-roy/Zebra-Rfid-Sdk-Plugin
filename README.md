@@ -2,30 +2,38 @@
 
 
 ## Steps to follow
-1. flutter pub add zebra_rfid_sdk_plugin
-2. create/add folder to android
- -  create android/RFIDAPI3Library folder
- -  download content from below link and copy in android/RFIDAPI3Library
-    
-    Note:- (build.gradle and RFIDAPI3Library.arr add this files to android/RFIDAPI3Library) [Link](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/tree/main/android/RFIDAPI3Library)
+1. Run command to add package:
 
-3. In setting.gradle add below lines.
- - include ':app',':RFIDAPI3Library' //RFIDAPI3Library is folder name
-4. In build.gradle add below lines. // app level (android/app/build.gradle)
- - dependencies {
-   implementation project(":RFIDAPI3Library",)
-   }
-   //RFIDAPI3Library is folder name
+   ```javascript
+   flutter pub add zebra_rfid_sdk_plugin
+   ```
+2. Create android/RFIDAPI3Library folder
+
+3. Download both [build.gradle](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/android/RFIDAPI3Library/build.gradle) and [RFIDAPI3Library.aar](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/android/RFIDAPI3Library/RFIDAPI3Library.aar) and copy to android/RFIDAPI3Library
+
+4. In android/settings.gradle add the following line to the top of the file:
+   ```javascript
+   include ':app',':RFIDAPI3Library' //RFIDAPI3Library is folder name
    
-   see here -> [link](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/example/android/app/build.gradle)
-   
-5. Add below line to Android.xml
- - xmlns:tools="http://schemas.android.com/tools" (this will under manifest tag)
- - tools:replace="android:label" (this will add under application tag)
-6. minSdkVersion 19 or higher
+5. In build.gradle add below lines. // app level (android/app/build.gradle)
+
+   ```javascript
+    dependencies {
+     implementation project(":RFIDAPI3Library",)
+     }
+     //RFIDAPI3Library is folder name
+   ```
+6. Add below line to Android.xml
+ 
+   ```javascript
+    xmlns:tools="http://schemas.android.com/tools" // this will under manifest tag
+    tools:replace="android:label" // this will add under application tag
+   ```
+7. In android/app/build.gradle set minSdkVersion 19 or higher
+
  - Ready to use :D 
     
-- [still confuse refer this link example app](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/example/android/app/src/main/AndroidManifest.xml#:~:text=%3Cmanifest%20xmlns,ic_launcher%22%3E)
+- Still confused? Refer to [the example app](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/example/android/app/src/main/AndroidManifest.xml#:~:text=%3Cmanifest%20xmlns,ic_launcher%22%3E)
     
 
 ## Examples
