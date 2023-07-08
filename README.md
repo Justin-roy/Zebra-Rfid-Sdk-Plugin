@@ -33,7 +33,7 @@
 
  - Ready to use :D 
     
-- Still confused? Refer to [the example app](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/blob/main/example/android/app/src/main/AndroidManifest.xml#:~:text=%3Cmanifest%20xmlns,ic_launcher%22%3E)
+- Still confused? Refer to [the example app](https://github.com/Justin-roy/Zebra-Rfid-Sdk-Plugin/tree/main/example)
     
 
 ## Examples
