@@ -37,8 +37,6 @@ flutter:
       android:
         package: com.example.zebra_rfid_sdk_plugin
         pluginClass: ZebraRfidSdkPlugin
-      ios:
-        pluginClass: ZebraRfidSdkPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
